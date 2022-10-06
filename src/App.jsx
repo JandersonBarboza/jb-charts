@@ -1,4 +1,4 @@
-import { JbChart } from "./components/jbChart";
+import { JbChart } from "./components/JbChart";
 
 const data = [
     {
