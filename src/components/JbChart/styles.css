@@ -1,0 +1,51 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    /* background: black; */
+
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 25px;
+    grid-template-areas: 
+    "side content"
+    "cross labels";
+
+    position: relative;
+}
+
+.side {
+    grid-area: side;
+    border-right: 1px solid white;
+    /* background: pink; */
+}
+
+.content {
+    grid-area: content;
+    /* background: magenta; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 0;
+}
+
+.cross {
+    grid-area: cross;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    /* background: blue; */
+}
+
+.labels {
+    grid-area: labels;
+    border-top: 1px solid white;
+    /* background: purple; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0;
+}
