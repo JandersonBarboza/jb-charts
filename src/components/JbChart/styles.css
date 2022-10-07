@@ -1,7 +1,6 @@
 .container {
     min-width: 480px;
     height: 100%;
-    /* border: 1px solid white; */
     display: grid;
     grid-template-columns: 50px 1fr;
     grid-template-rows: 1fr 25px;

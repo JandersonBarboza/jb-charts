@@ -17,28 +17,24 @@ export function JbBars({ data }) {
     }
     function handleTooltipLeave() {
         setTooltipShow(0);
+        setTooltipPos([-100, -100]);
     }
 
     return (
-        <>
-            <div id='item'>
-
-                <div className="bgBar">
-                    <div
-                        className="bar"
-                        style={{ height: data.value + '%', background: data.color }}
-                        onMouseEnter={handleTooltipEnter}
-                        onMouseMove={handleTooltipMove}
-                        onMouseLeave={handleTooltipLeave}
-                    >
-                    </div>
+        <div id='item'>
+            <div className="bgBar">
+                <div
+                    className="bar"
+                    style={{ height: data.value + '%', background: data.color }}
+                    onMouseEnter={handleTooltipEnter}
+                    onMouseMove={handleTooltipMove}
+                    onMouseLeave={handleTooltipLeave}
+                >
                 </div>
-
-                <div className='tooltipContainer'>
-                    <JbTooltip tooltipPos={tooltipPos} opacity={tooltipShow} data={data} />
-                </div>
-
             </div>
-        </>
+            <div className='tooltipContainer'>
+                <JbTooltip tooltipPos={tooltipPos} opacity={tooltipShow} data={data} />
+            </div>
+        </div>
     )
 }
