@@ -4,7 +4,7 @@ import './styles.css';
 
 export function JbBars({ data }) {
     const [tooltipShow, setTooltipShow] = useState(0);
-    const [tooltipPos, setTooltipPos] = useState([data.value, data.value]);
+    const [tooltipPos, setTooltipPos] = useState([-100, -100]);
 
     function handleTooltipEnter(event) {
         setTooltipShow(1);
