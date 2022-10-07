@@ -1,0 +1,23 @@
+.tooltip {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    background: white;
+    color: black;
+    position: fixed;
+    left: 129px;
+    top: 427px;
+    z-index: 1;
+    transition: opacity .2s;
+}
+
+.tooltip::before {
+    display: 'none';
+    background: red;
+    transition: opacity .2s;
+}

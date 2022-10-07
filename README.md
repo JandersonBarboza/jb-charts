@@ -5,8 +5,8 @@
 
 - [x] Adição de barras dinâmica
 - [x] Atualização de dados com useState
-- [ ] Responsividade
-- [ ] Tooltip com o resumo
+- [x] Tooltip com o resumo
+- [x] Responsividade
 
 ![image](https://user-images.githubusercontent.com/27715553/194304898-37cf0dd8-3c8e-435a-835f-fcaf69c1525b.png)
 

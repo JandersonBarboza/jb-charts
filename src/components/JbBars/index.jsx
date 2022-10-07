@@ -1,20 +1,44 @@
-import './styles.css'
+import { useState } from 'react';
+import { JbTooltip } from '../JbTooltip';
+import './styles.css';
 
-export function JbBars({ value, label, color }) {
+export function JbBars({ data }) {
+    const [tooltipShow, setTooltipShow] = useState(0);
+    const [tooltipPos, setTooltipPos] = useState([data.value, data.value]);
+
+    function handleTooltipEnter(event) {
+        setTooltipShow(1);
+    }
+    function handleTooltipMove(event) {
+        setTooltipPos([
+            event.clientX,
+            event.clientY
+        ])
+    }
+    function handleTooltipLeave() {
+        setTooltipShow(0);
+    }
+
     return (
-        <div id='item'>
-            <div className="bgBar">
-                <div className="bar" style={{ height: value + '%', background: color }} >
-                    <div className='line' /*style={{ background: 'white' }}*/></div>
-                    <div className='value' /*style={{ color: 'white' }}*/>
-                        <div>
-                            {value}
-                        </div>
+        <>
+            <div id='item'>
+
+                <div className="bgBar">
+                    <div
+                        className="bar"
+                        style={{ height: data.value + '%', background: data.color }}
+                        onMouseEnter={handleTooltipEnter}
+                        onMouseMove={handleTooltipMove}
+                        onMouseLeave={handleTooltipLeave}
+                    >
                     </div>
                 </div>
-            </div>
-            <label>{label}</label>
-        </div>
-    )
 
+                <div className='tooltipContainer'>
+                    <JbTooltip tooltipPos={tooltipPos} opacity={tooltipShow} data={data} />
+                </div>
+
+            </div>
+        </>
+    )
 }
