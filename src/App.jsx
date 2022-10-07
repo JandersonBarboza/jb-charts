@@ -1,6 +1,7 @@
 import { JbChart } from "./components/JbChart";
+import { useState } from 'react';
 
-const data = [
+let data = [
     {
         id: 1,
         label: 'Exemplo 1',
@@ -51,8 +52,22 @@ const data = [
     }
 ];
 
-export function App () {
+export function App() {
+    const [value, setValue] = useState('');
+
+    function handleChange() {
+        setValue(
+            data.map(newValues => newValues.value = `${Math.floor(Math.random() * 100)}`)
+        );
+        //console.log(data)
+    }
+
     return (
-        <JbChart data={data} />
+        <>
+            <JbChart data={data} />
+            <button style={{ position: 'fixed', top: 0 }} onClick={handleChange}>
+                Teste
+            </button>
+        </>
     )
 }

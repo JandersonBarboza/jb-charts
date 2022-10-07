@@ -2,7 +2,7 @@ import { JbBars } from '../JbBars';
 import './styles.css';
 
 export function JbChart({ data }) {
-    console.log(data)
+    //console.log(data)
     return (
         <div className='container'>
             <div className='side'>

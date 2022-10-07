@@ -4,7 +4,7 @@
 ### Features
 
 - [x] Adição de barras dinâmica
-- [ ] Atualização de dados com useState
+- [x] Atualização de dados com useState
 - [ ] Responsividade
 - [ ] Tooltip com o resumo
 
