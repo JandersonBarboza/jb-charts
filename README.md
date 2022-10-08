@@ -9,8 +9,7 @@
 - [x] Tooltip com o resumo
 - [x] Responsividade
 
-![image](https://user-images.githubusercontent.com/27715553/194304898-37cf0dd8-3c8e-435a-835f-fcaf69c1525b.png)
-
+![image](https://user-images.githubusercontent.com/27715553/194678056-2b773397-db52-499f-b555-f08688a3aa8f.png)
 
 ### Exemplo de objeto
 ```js
