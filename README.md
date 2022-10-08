@@ -1,7 +1,6 @@
 <h1 align="center">JB Charts 📈</h1>
-<p align="center">Componente React - Gráfico em Barras</p>
 
-<p align="center">Este projeto tem como objetivo construir um simples gráfico de barras utilizando somente o <strong>ReactJS</strong>.</p>
+<p align="center">Este projeto tem como objetivo construir um simples gráfico de barras utilizando apenas <strong>ReactJS + CSS</strong>.</p>
 
 ### Features
 
