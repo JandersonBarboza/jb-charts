@@ -2,7 +2,7 @@ import { JbBars } from '../JbBars';
 import { JbTooltip } from '../JbTooltip';
 import './styles.css';
 
-export function JbChart({ data }) {
+export function JbChart({ data}) {
     return (
         <div className='container'>
             <div className='side'>
