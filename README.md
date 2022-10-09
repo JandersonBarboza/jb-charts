@@ -1,5 +1,6 @@
 <h1 align="center">JB Charts 📈</h1>
-<p align="center">Componente React - Gráfico em Barras</p>
+
+<p align="center">Este projeto tem como objetivo construir um simples gráfico de barras utilizando apenas <strong>ReactJS + CSS</strong>.</p>
 
 ### Features
 
@@ -8,8 +9,7 @@
 - [x] Tooltip com o resumo
 - [x] Responsividade
 
-![image](https://user-images.githubusercontent.com/27715553/194304898-37cf0dd8-3c8e-435a-835f-fcaf69c1525b.png)
-
+![image](https://user-images.githubusercontent.com/27715553/194678142-2749ea9d-3de4-41b0-9efe-1b958779e91b.png)
 
 ### Exemplo de objeto
 ```js
